@@ -1,27 +1,26 @@
-# Regular Expressions
-# python module tre
-# regex ?
-# Regular Expressions
-# sequence of characters that define a search pattern
+# regex ? Regular Expressions
+# python module re
+
+# to define a search pattern 
 # used for password/email/text validation
-# EX- ^a...s$
-# thi is any 5 letter string starting with a and ending with s
+# EX- ^a...s$ - any 5 letter string starting with a and ending with s
 
 # python module re 
 
 import re
-pat = "^a....s"
+pat = "^a...s$"
 
 test_string = "abyfs"
 print(re.match(pat,test_string)) #None
 
 
-#re.match() function to search pattern
-# returns match object or None
+# re.match() to search pattern - returns match object  on sucessful search or None
 
-#About RegExpressions
+##############
+# About RegExpressions
+# To specify regex- metacharacters are used
+# Metachars are interpreted in a spcial way RegEx engine
 
-#Specify pattern using regex -  Metachars are interpreted in a spcial way RegEx engine
 # []
 # . 
 # ^
@@ -32,35 +31,32 @@ print(re.match(pat,test_string)) #None
 # \
 # |
 
-# Square brackects []
-# a set of chars to match
+# SQUARE BRACKETS []
+# to specify a set of chars to match
 
-# [abc] , a 1match, ac 2 matc, xyx no match, abc de ca. 5 match
+# [abc] ----> a 1match, ac 2 matc, xyx no match, abc de ca. 5 match
 # [abc] will match to string contains any of a,b,c
 # [a-e] is same as [abcde]
 
-# INVERT using caret ^ symbol 
+# INVERT using CARET ^ symbol 
 # [^abc] means anything except a or b or c .eg hello
 
-# Period . 
+# PERIOD . 
 # any ONE char except newline '\n'
 # 1.  1a  Match
 # .. aa     match
 # .. abc    match
 
 
-# ^ Caret  - if a string start with certain chars
+# ^ CARET  - if a string start with certain chars
 # ^p prabcs    match   ,  nagcbss No match
 # ^pq
 
-# $ Dollar -- if it end with certain chars
+# $ DOLLAR -- if it end with certain chars
 # a$ formula 1 match , cab no match
 
-# * Star  -  0+ occurance of preceding elements
-
+# * STAR  -  0+ occurance of preceding elements
 # ma*n      -- a can be 0 or more
-
-
 
 
 # + PLUS 1+ occurance of preceding elements
@@ -73,18 +69,18 @@ print(re.match(pat,test_string)) #None
 # Examples
 # [0-9]{2,4}
 
-# | Alteranation Vertical bar(or operator)
+# | Alteranation VERTICAL BAR (or operator)
 # a|b  match to string either contains a or b
 
 
 
-# Group  () - used to group sub patterns 
+# GROUP  () - used to group sub patterns 
 # (a|b|c)xyz -- match to a string a or b or c xyz
 
 
 
-# \ backslash -  escape char include all metachars
-# \$a  -  match to a sstrinf contains $ followdd by a. $ is not intepereted in a speical way
+# \ BACKSLASH -  escape char include all metachars
+# \$a  -  match to a sstrinf contains $ followd by a. $ is not intepereted in a speical way
 
 
 # SPECIAL SEQUENCES
@@ -99,7 +95,8 @@ print(re.match(pat,test_string)) #None
 # \W matchs to non-apa char [^a-zA-Z0-9_]
 # \Z - Matches if the specified characters are at the end of a strin
 
-# Python RegEx
+###################
+# PYTHON REGEX
 
 import re
 
