@@ -26,11 +26,24 @@ print(os.getcwd())
 
 
 # traverse root directory, and list directories as dirs and files as files
-# os.walk returns a generator, that creates a tuple of values (current_path, directories in current_path, files in current_path).
-
+# os.walk .. it generates the filenane by walking the tree
+# returns a genreator 
+# that creates a uple of values (dirpath, dirname,filnames)
 
 
 import os
+
+# a =os.walk("/home/abhis/Documents/Test_Directory")
+# print(a)
+# print(next(a))
+# print(next(a))
+# print(next(a))
+# print(next(a))
+# print(next(a))
+# print(next(a))
+# print(next(a))
+
+print("#########")
 
 for root, dirs, files in os.walk("/home/abhis/Documents/Test_Directory"):
    for name in files:
@@ -45,4 +58,8 @@ for root, dirs, files in os.walk("/home/abhis/Documents/Test_Directory"):
     print((len(path) - 1) * '+++', os.path.basename(root))
     for file in files:
         print(len(path) * '***', file)
+
+
+# os.path.join() :  joins  path components with exactly one direct separator (“/”)
+
 
