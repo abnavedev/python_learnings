@@ -111,9 +111,9 @@ pattern = '\d+'
 
 
 res = re.findall(pattern,string)
-
+print("#############")
 print(res)
-print(type(res))
+print(type(res)) #Class List
 
 # re.split() - split the string where there is a mtach ,returns list of string
 
@@ -131,9 +131,9 @@ print(result)
 
 
 # Program to remove all whitespaces
-# multiline string
 str = 'abc 12\
 de 23 \n f45 6'
+
 # matches all whitespace characters
 pattern = '\s+'
 replace = ''
