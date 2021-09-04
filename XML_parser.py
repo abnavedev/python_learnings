@@ -15,6 +15,8 @@
 
 import xml.etree.ElementTree as ET
 
+
+
 # there are 2 ways
 # parse() function: XML file
 # fromstring() - If XML is given in string form
@@ -42,8 +44,10 @@ print(xml_root.attrib)
 # to get child tag and attributes
 # xml_root[0].tag 
 # xml_root[0].attrib
+# first child
+print(xml_root[0].tag)
+print(xml_root[0][0].tag)
 
-# To get to  all first-child tags of the root,
 print("##########")
 
 for i in xml_root[0] :
@@ -61,6 +65,7 @@ for i in xml_root[0] :
 # use get()
 
 for i in xml_root.findall('food') : # search for all occurance of food
+    #print(i) - will give all the food element
     item = i.find('item').text
     price = i.find('price').text
     print(item,price)
