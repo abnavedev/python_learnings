@@ -28,9 +28,8 @@ xml_root = tree.getroot() #getroot( returns the root element
 
 print(xml_root)
 
-print(xml_root.tag) #get  the root tag by using the ‘tag’ object
+print(xml_root.tag) # get the root tag by using the ‘tag’ object
 ## roottag is metadata in the sample
-# Can slice the tag string xml_root.tag[0:4]
 
 print(xml_root.attrib) 
 # tags has attributes as dictionary
@@ -39,13 +38,14 @@ print(xml_root.attrib)
 
 # To find the element of interest 
 
-# root has child tags
+# root has child 
 # to get child tag and attributes
 # xml_root[0].tag 
 # xml_root[0].attrib
 
 # To get to  all first-child tags of the root,
 print("##########")
+
 for i in xml_root[0] :
     print(i.tag,"-->", i.attrib)
 
