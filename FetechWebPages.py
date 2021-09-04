@@ -1,4 +1,4 @@
-#Python - HTTP Requests
+#HTTP Requests - requests library 
 
 # HTTP protocol  - clinet(Web browser) - send HTTP requests to a server
 
@@ -14,6 +14,7 @@
 
 # in Python we need requests module for making http request
 # pip install requests
+# Requests Module-  provides funcationalities form managing reuest and response
 
 # Response object  - When a request is made to a URL... It returns a resposne
 # In python Reponse object is rturned by request.method() #method being get post etc
@@ -24,6 +25,11 @@
 import requests
 
 # making a request 
+# built-in methods to make HHT req to a URL
+
+# get method-    to retrive information from a specified server givern a URL
+# get methd - ? char.. encoded user info appended withthe page req
+
 res =  requests.get("https://github.com/abnavedev/python_learnings")
 #response 
 
@@ -31,5 +37,22 @@ res =  requests.get("https://github.com/abnavedev/python_learnings")
 print(res.url)
 print(res.status_code)
 
+
+# GET - 
+#POST reuest 
+# PUt
+# Delete 
+
+# RESPONSe OBJECT
+# request.method() --- get put post
+# return repinse object
+# status code
+# header
+# close
+# url
+# text
+# content 
 # Authentication using Python Requests
+
+# Can implement web scrapping with BeautifulSoup
 
