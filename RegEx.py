@@ -147,7 +147,7 @@ new_string = re.sub(pattern, replace, str,3)  ## count as a fourth
 # o default - replace all occurane
 print(new_string)
 
-#re.subn() is similar to re.sub() 
+# re.subn() is similar to re.sub() 
 # it returns a tuple of 2 . new string and np. of substition
 
 new_string = re.subn(pattern, replace, string) 
